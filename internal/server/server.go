@@ -33,7 +33,7 @@ func registerRoutes(configuration schema.Configuration, providers middlewares.Pr
 	resetPassword := strconv.FormatBool(!configuration.AuthenticationBackend.DisableResetPassword)
 
 	embeddedPath, _ := fs.Sub(assets, "public_html")
-	embeddedFS := NewFastHTTPHandler(http.FileServer(http.FS(embeddedPath)))
+	embeddedFS := newFastHTTPHandler(http.FileServer(http.FS(embeddedPath)))
 	rootFiles := []string{"favicon.ico", "manifest.json", "robots.txt"}
 
 	serveIndexHandler := ServeTemplatedFile(embeddedAssets, indexFile, configuration.Server.Path, rememberMe, resetPassword, configuration.Session.Name, configuration.Theme)

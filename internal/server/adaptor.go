@@ -9,10 +9,10 @@ import (
 	"github.com/valyala/fasthttp"
 )
 
-func NewFastHTTPHandler(h http.Handler) fasthttp.RequestHandler {
+func newFastHTTPHandler(h http.Handler) fasthttp.RequestHandler {
 	return func(ctx *fasthttp.RequestCtx) {
 		var r http.Request
-		if err := ConvertRequest(ctx, &r, true); err != nil {
+		if err := convertRequest(ctx, &r, true); err != nil {
 			ctx.Logger().Printf("cannot parse requestURI %q: %s", r.RequestURI, err)
 			ctx.Error("Internal Server Error", fasthttp.StatusInternalServerError)
 			return
@@ -75,7 +75,7 @@ func (w *netHTTPResponseWriter) Write(p []byte) (int, error) {
 	return len(p), nil
 }
 
-func ConvertRequest(ctx *fasthttp.RequestCtx, r *http.Request, forServer bool) error {
+func convertRequest(ctx *fasthttp.RequestCtx, r *http.Request, forServer bool) error {
 	rURL, err := url.ParseRequestURI(string(ctx.RequestURI()))
 	if err != nil {
 		return err

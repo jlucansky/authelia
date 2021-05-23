@@ -42,10 +42,6 @@ func ServeTemplatedFile(publicDir, file, base, rememberMe, resetPassword, sessio
 		switch extension := filepath.Ext(file); extension {
 		case ".html":
 			ctx.SetContentType("text/html; charset=utf-8")
-		case ".css":
-			ctx.SetContentType("text/css; charset=utf-8")
-		case ".js":
-			ctx.SetContentType("text/javascript; charset=utf-8")
 		default:
 			ctx.SetContentType("text/plain; charset=utf-8")
 		}
