@@ -22,7 +22,7 @@ func NewProviderConfig(configuration schema.SessionConfiguration, certPool *x509
 	config.CookieName = configuration.Name
 
 	// Set the cookie to the given domain.
-	config.Domain = configuration.Domain
+	//config.Domain = configuration.Domain
 
 	// Set the cookie SameSite option.
 	switch configuration.SameSite {
@@ -37,7 +37,7 @@ func NewProviderConfig(configuration schema.SessionConfiguration, certPool *x509
 	}
 
 	// Only serve the header over HTTPS.
-	config.Secure = true
+	//config.Secure = true
 
 	// Ignore the error as it will be handled by validator.
 	config.Expiration, _ = utils.ParseDurationString(configuration.Expiration)

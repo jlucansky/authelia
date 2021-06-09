@@ -442,6 +442,7 @@ func VerifyGet(cfg schema.AuthenticationBackendConfiguration) middlewares.Reques
 			return
 		}
 
+		/*
 		if !isURLUnderProtectedDomain(targetURL, ctx.Configuration.Session.Domain) {
 			ctx.Logger.Error(fmt.Errorf("The target URL %s is not under the protected domain %s",
 				targetURL.String(), ctx.Configuration.Session.Domain))
@@ -449,6 +450,7 @@ func VerifyGet(cfg schema.AuthenticationBackendConfiguration) middlewares.Reques
 
 			return
 		}
+		*/
 
 		isBasicAuth, username, name, groups, emails, authLevel, err := verifyAuth(ctx, targetURL, refreshProfile, refreshProfileInterval)
 

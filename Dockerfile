@@ -3,8 +3,8 @@
 # =======================================
 FROM golang:1.16.5-alpine AS builder-backend
 
-ARG BUILD_TAG
-ARG BUILD_COMMIT
+ARG BUILD_TAG master
+ARG BUILD_COMMIT 123
 
 WORKDIR /go/src/app
 

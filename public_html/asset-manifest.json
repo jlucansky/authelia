@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "{{.Base}}/static/css/main.ecc43e7a.chunk.css",
+    "main.js": "{{.Base}}/static/js/main.6776a0e9.chunk.js",
+    "main.js.map": "{{.Base}}/static/js/main.6776a0e9.chunk.js.map",
+    "runtime-main.js": "{{.Base}}/static/js/runtime-main.cc5273ce.js",
+    "runtime-main.js.map": "{{.Base}}/static/js/runtime-main.cc5273ce.js.map",
+    "static/css/2.c706b399.chunk.css": "{{.Base}}/static/css/2.c706b399.chunk.css",
+    "static/js/2.0436358f.chunk.js": "{{.Base}}/static/js/2.0436358f.chunk.js",
+    "static/js/2.0436358f.chunk.js.map": "{{.Base}}/static/js/2.0436358f.chunk.js.map",
+    "index.html": "{{.Base}}/index.html",
+    "static/css/2.c706b399.chunk.css.map": "{{.Base}}/static/css/2.c706b399.chunk.css.map",
+    "static/css/main.ecc43e7a.chunk.css.map": "{{.Base}}/static/css/main.ecc43e7a.chunk.css.map",
+    "static/js/2.0436358f.chunk.js.LICENSE.txt": "{{.Base}}/static/js/2.0436358f.chunk.js.LICENSE.txt",
+    "static/media/applestore-badge.15f01eef.svg": "{{.Base}}/static/media/applestore-badge.15f01eef.svg",
+    "static/media/googleplay-badge.6577102c.svg": "{{.Base}}/static/media/googleplay-badge.6577102c.svg",
+    "static/media/user.8772ccb3.svg": "{{.Base}}/static/media/user.8772ccb3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc5273ce.js",
+    "static/css/2.c706b399.chunk.css",
+    "static/js/2.0436358f.chunk.js",
+    "static/css/main.ecc43e7a.chunk.css",
+    "static/js/main.6776a0e9.chunk.js"
+  ]
+}
