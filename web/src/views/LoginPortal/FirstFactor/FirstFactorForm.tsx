@@ -188,6 +188,7 @@ const FirstFactorForm = function (props: Props) {
                 <Grid item xs={12}>
                     <Button
                         id="sign-in-button"
+                        key={`${disabled}`}
                         variant="contained"
                         color="primary"
                         fullWidth
