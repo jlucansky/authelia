@@ -103,6 +103,7 @@ const emailHTMLContent = `
       }
 
       .button {
+         color: white !important;
          padding: 15px 30px;
          border-radius: 10px;
          background: rgb(25, 118, 210);
